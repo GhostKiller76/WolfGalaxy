@@ -7,6 +7,10 @@ bot.on('message', function (message) {
     message.channel.send('**``` Aide : ```**');
     message.channel.send("``` !!site : Affiche l'adresse web du site officiel de la team. \n !!help : Affiche l'aide concernant le bot WolfGalaxy```");
   }
+  if (message.content === '!!site') {
+    message.channel.send('**``` Site Web : ```**');
+    message.channel.send("**Rejoins nous ;) : http://wolfgalaxy.000webhostapp.com/index.php**");
+  }
 })
 
 bot.on("ready", function() {
