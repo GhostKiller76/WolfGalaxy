@@ -2,8 +2,14 @@ const Discord = require("discord.js");
 
 var bot = new Discord.Client();
 
+bot.on('message', function (message) {
+  if (message.content === '!!ping') {
+    message.reply('pong');
+  }
+})
+
 bot.on("ready", function() {
-  bot.user.setGame("WolfGalaxy | !help");
+  bot.user.setGame("WolfGalaxy | !!help");
   console.log("Le bot a bien été connecter");
 })
 
