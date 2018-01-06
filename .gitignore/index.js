@@ -9,7 +9,7 @@ bot.on('message', function (message) {
   }
   if (message.content === '!!site') {
     message.channel.send('**``` Site Web : ```**');
-    message.channel.send("**Rejoins nous :wink: : http://wolfgalaxy.000webhostapp.com/index.php**");
+    message.channel.send("**Rejoins nous :wink: : https://wolfgalaxy.000webhostapp.com/index.php**");
   }
   if (message.content === 'Qui est WolfGalaxy ?') {
     message.channel.send('**``` Informations : ```**');
