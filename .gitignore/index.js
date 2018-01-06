@@ -3,8 +3,14 @@ const Discord = require("discord.js");
 var bot = new Discord.Client();
 
 bot.on('message', function (message) {
-  if (message.content === '!!ping') {
-    message.channel.send('pong');
+  if (message.content === '!!help') {
+    message.channel.send('``` Aide ```
+ 
+    ```
+    !!help : Affiche l'aide concernant le bot WolfGalaxy.
+    !!site : Affiche l'adresse web du site officiel de la team.
+   ```
+');
   }
 })
 
