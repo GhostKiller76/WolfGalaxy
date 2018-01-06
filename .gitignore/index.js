@@ -7,7 +7,6 @@ bot.on('message', function (message) {
     message.channel.send('**``` Aide : ```**');
     message.channel.send("``` !!site : Affiche l'adresse web du site officiel de la team.");
     message.channel.send('"**``` Aide : ```**');
-");
   }
 })
 
