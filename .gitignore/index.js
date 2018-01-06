@@ -17,12 +17,6 @@ bot.on('message', function (message) {
   }
 })
 
-bot.on('guildMemberAdd', function (member) {
-  member.createDM().then(function (channel) {
-    return channel.send("Bienvenue sur le channel " +_member.displayName)
-  }).catch(console.error)
-})
-
 bot.on("ready", function() {
   bot.user.setGame("WolfGalaxy | !!help");
   console.log("Le bot a bien été connecter");
