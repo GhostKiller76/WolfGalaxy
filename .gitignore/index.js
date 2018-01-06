@@ -4,7 +4,7 @@ var bot = new Discord.Client();
 
 bot.on('message', function (message) {
   if (message.content === '!!ping') {
-    message.reply('pong');
+    message.channel.send('pong');
   }
 })
 
