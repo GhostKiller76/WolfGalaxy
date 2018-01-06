@@ -11,6 +11,10 @@ bot.on('message', function (message) {
     message.channel.send('**``` Site Web : ```**');
     message.channel.send("**Rejoins nous :wink: : http://wolfgalaxy.000webhostapp.com/index.php**");
   }
+  if (message.content === 'Qui est WolfGalaxy ?') {
+    message.channel.send('**``` Informations : ```**');
+    message.channel.send("**Je suis un bot développer par @Ghost#4025**");
+  }
 })
 
 bot.on("ready", function() {
